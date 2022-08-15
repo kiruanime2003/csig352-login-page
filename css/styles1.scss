@@ -1,0 +1,206 @@
+$black:#000;
+$eggshell:#F3EFE0;
+$nickel: #7A7870;
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus, button:focus{
+    outline: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #A62639;
+}
+
+#box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px $black solid;
+    background-color: $eggshell;
+    padding: 30px;
+    border-radius: 10px;
+    width: fit-content;
+
+    form{
+        width: 100%;
+    }
+
+    h1{
+        font-weight: 600;
+        font-size: 25px;
+        color: $black;
+        letter-spacing: 0.2px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    label{
+        font-weight: 500;
+        font-size: 17px;
+        color: $nickel;
+        letter-spacing: 0.3px;
+        position: relative;
+        bottom: -4px;
+    }
+
+    input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 5px 0;
+        font-size: 14.5px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: $black;
+        letter-spacing: 0.5px;
+        background-color: $eggshell;
+    }
+
+    #email{
+        border-bottom: 2px $nickel solid;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #password, #password1{
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .pass-box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 2px $nickel solid;
+        height: 33.2px;
+        margin-bottom: 50px;
+    }
+
+    #btn-parent{
+        text-align: center;
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+    button{
+        padding: 8px 16px;
+        letter-spacing: 1.2px;
+        background-color: $black;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $eggshell;
+    }
+    
+    button:hover{
+        cursor: pointer;
+    }
+
+    button:focus{
+        outline: none;
+    }
+
+    p{
+        text-align: center;
+        font-size: 12.5px;
+        font-weight: 300;
+        margin-top: 11px;
+        color: $black;
+        letter-spacing: 0.7px;
+
+        a{
+            font-weight: 400;
+            color: $nickel;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width:701px){
+
+    #box{
+        padding: 25px;
+        width:55vw;
+    
+        h1{
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+    
+        label{
+            font-size: 15.5px;
+        }
+    
+        input{
+            font-size: 12.5px;
+        }
+    
+        .pass-box{
+            margin-bottom: 47px;
+        }
+    
+        img{
+            width: 17px;
+            height: 17px;
+        }
+    
+        p{
+            font-size: 11.5px;
+            margin-top: 15px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:420px){
+
+    #box{
+        padding: 20px;
+        width: 90vw;
+    
+        h1{
+            font-size: 21px;
+        }
+    }
+}
+
+@media screen and (max-width:334px){
+
+    #box{
+        padding: 20px;
+        width: 90vw;
+    
+        form{
+            width: 100%;
+        }
+    
+        h1{
+            font-size: 21px;
+        }
+    }
+}

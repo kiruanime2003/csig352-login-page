@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="box">
+        <h1>Sign in</h1>
+        <form action="#">
+
+            <label for="email">Email</label><br/>
+            <input id="email"type="email" placeholder="" required><br/>
+
+            <label for="password">Password</label><br/>
+            <div id="pass-box">
+                <input id="password" type="password" placeholder="" required>
+                <img alt="eye-svg-icon" class="closed" src="./assets/eye-off.svg">
+            </div>
+            
+            <div id="btn-parent">
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+        <p>New user? <a href="index1.html">Sign up</a></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
